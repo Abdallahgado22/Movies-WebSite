@@ -1,0 +1,54 @@
+:root {
+  /* Font */
+  --font-family: Arial, sans-serif;
+
+  /* Layout */
+  --slider-container-width-mobile: 100%;
+  --slider-container-width-tablet: 80%;
+  --slider-container-width-desktop: 70%;
+  --slider-container-margin: 0;
+  --slider-container-margin-desktop: auto;
+
+  /* Card */
+  --card-bg-color: #f4f4f4;
+  --card-border-color: #d9c2c2;
+  --card-bg-color-hover: #f9f9f9;
+  --card-border-color-hover: #ccc;
+  --bc-color: rgb(238, 112, 112);
+  --card-bg-color: #f4f4f4;
+  --card-border-color: #d9c2c2;
+  --card-bg-color-hover: #f9f9f9;
+  --card-border-color-hover: #ccc;
+  --card-title-color: #333;
+  --card-title-hover-color: #e53935;
+  --card-text-color: #555;
+  --btn-bg-color: #007bff;
+  --btn-bg-hover-color: #0056b3;
+  --btn-text-color: #fff;
+
+  /* CSS Variables */
+  --card-border-color: #ddd;
+  --card-bg-color: #fff;
+  --card-bg-color-hover: #f0f0f0;
+  --card-title-color: #333;
+  --card-title-hover-color: #e53935;
+  --card-text-color: #555;
+  --btn-bg-color: #007bff;
+  --btn-bg-hover-color: #0056b3;
+  --btn-text-color: #fff;
+
+  /* Navigation Buttons */
+  --nav-btn-bg-color: rgba(0, 0, 0, 0.5);
+  --nav-btn-color: #fff;
+  --nav-btn-padding-mobile: 10px;
+  --nav-btn-padding-tablet: 15px;
+  --nav-btn-padding-desktop: 20px;
+  --nav-btn-position-left: var(--nav-btn-padding-mobile);
+  --nav-btn-position-right: var(--nav-btn-padding-mobile);
+
+  /* Transition */
+  --transition-duration: 0.5s;
+  --transition-ease: ease;
+  --transition-duration: 0.5s;
+  --transition-ease: ease;
+}

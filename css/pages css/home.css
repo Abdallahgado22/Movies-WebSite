@@ -1,0 +1,185 @@
+/* General Body and Section Styling */
+body {
+  background-image: url("/Photos/fons-heijnsbroek-abstract-art--ydrlmgnL5Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section-1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.section-1 h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-1 h3::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #f39c12;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.section-1 h3:hover {
+  color: #f39c12;
+  transform: translateY(-5px);
+}
+
+/* Card Styling */
+.card {
+  flex: 0 0 calc(50% - 20px); /* 2 cards per row with spacing */
+  margin: 10px; /* Space between cards */
+  background-color: rgba(51, 51, 51, 0.8); /* 80% visibility */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(
+    51,
+    51,
+    51,
+    0.9
+  ); /* Slightly darker on hover for more visibility */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 400px; /* Fixed height for images */
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff; /* White color to match navbar text color */
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: #f39c12; /* Color change on hover */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ccc; /* Light color for text */
+}
+
+/* Slider Styling */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure cards stay in a row */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider::after {
+  content: "";
+  flex: 0 0 20px; /* Spacing after the last card */
+}
+
+/* Slider Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  color: #fff;
+  border: 2px solid #fff; /* Adds a border to the button */
+  padding: 12px; /* Adjust padding */
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem; /* Adjust font size for visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  transform: scale(1.2); /* Slightly larger scaling */
+  border-color: #f39c12; /* Border color on hover */
+}
+
+/* Left Button */
+.nav-btn.left {
+  left: 10px;
+}
+
+/* Right Button */
+.nav-btn.right {
+  right: 10px;
+}
+
+/* Optional: Adjust the appearance of the dropdown */
+.navbar-nav .dropdown-menu {
+  background-color: #343a40; /* Dark background for dropdown */
+}
+
+.navbar-nav .dropdown-item {
+  color: #ffffff; /* White text color for dropdown items */
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #495057; /* Darker background color on hover */
+}
+
+.navbar-nav .dropdown-item i {
+  font-size: 1.2em; /* Adjust icon size */
+  margin-right: 0.5em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 calc(100% - 20px); /* Single card per row on small screens */
+  }
+}

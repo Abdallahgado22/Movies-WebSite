@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/component css/signin.css" />
+    <link rel="icon" href="Photos/favicon.png" sizes="any" />
+  </head>
+  <body>
+    <header class="bg-dark text-white text-center py-4">
+      <h1 class="display-4">Create Your Account</h1>
+      <p class="lead">Fill in the details below to sign up</p>
+    </header>
+
+    <main
+      class="d-flex justify-content-center align-items-center vh-100 bg-light"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+            <div class="sign-in-card">
+              <div class="card-body p-5">
+                <h2 class="card-title text-center mb-4">Sign Up</h2>
+                <form id="signUpForm">
+                  <div class="form-group mb-4">
+                    <label for="username" class="form-label">Username</label>
+                    <input
+                      type="text"
+                      class="form-control modern-input"
+                      id="username"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control modern-input"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control modern-input"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="passwordConfirm" class="form-label"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control modern-input"
+                      id="passwordConfirm"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 py-2">
+                    Sign Up
+                  </button>
+                </form>
+                <div class="text-center mt-3">
+                  <p class="mb-0">
+                    Already have an account?
+                    <a href="signIn.html" class="text-primary">Sign In</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2024 wTw. All rights reserved.</p>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/signUp.js"></script>
+  </body>
+</html>

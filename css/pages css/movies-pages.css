@@ -1,0 +1,122 @@
+/* Flex container for rows */
+      
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+}
+
+/* Ensure each column takes full width and contains a card */
+.col-md-3 {
+  flex: 1;
+  min-width: 250px; /* Minimum width for columns */
+}
+
+/* General card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7)
+  );
+  height: 100%; /* Ensures card stretches to fill its container */
+}
+
+/* Card image */
+.card-img-top {
+  transition: transform 0.4s ease;
+  border-radius: 10px 10px 0 0;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the space without stretching */
+}
+
+/* Card body */
+.card-body {
+  flex: 1; /* Ensures the body grows to fill available space */
+  padding: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures title and text are spaced evenly */
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffeb3b; /* Bright color for title */
+  margin-bottom: 10px;
+  transition: color 0.4s ease;
+}
+
+/* Card text */
+.card-text {
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Hover effects */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card:hover .card-title {
+  color: #ff5722;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.section-1 .pagination #pageNumber {
+  margin: 0 10px;
+  padding-top: 6px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+}
+.pagination button {
+  background-color: #ff5722;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.pagination button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+.pagination button:disabled {
+  background-color: #6c757d;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}

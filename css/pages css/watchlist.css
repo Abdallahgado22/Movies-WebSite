@@ -1,0 +1,129 @@
+@import url(var.css);
+
+.margin{
+  margin-top: 140px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-duration) var(--transition-ease),
+    box-shadow var(--transition-duration) var(--transition-ease),
+    background-color var(--transition-duration) var(--transition-ease);
+  border: 1px solid var(--card-border-color);
+  border-radius: 10px;
+  background-color: var(--card-bg-color);
+  height: 100%; /* Ensures card stretches to fill its container */
+  opacity: 0.8; /* Set visibility to 80% */
+}
+
+/* Card image */
+.card-img-top {
+  transition: transform var(--transition-duration) var(--transition-ease);
+  border-radius: 10px 10px 0 0;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the space without stretching */
+}
+
+/* Card body */
+.card-body {
+  flex: 1; /* Ensures the body grows to fill available space */
+  padding: 20px;
+  color: var(--card-text-color);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures title and text are spaced evenly */
+  transition: background-color var(--transition-duration) var(--transition-ease);
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--card-title-color); /* Color for title */
+  margin-bottom: 10px;
+  transition: color var(--transition-duration) var(--transition-ease),
+    transform var(--transition-duration) var(--transition-ease);
+}
+
+/* Card text */
+.card-text {
+  color: var(--card-text-color);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color var(--transition-duration) var(--transition-ease),
+    transform var(--transition-duration) var(--transition-ease);
+}
+
+/* Hover effects */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  background-color: var(--card-bg-color-hover);
+  cursor: pointer;
+  opacity: 1; /* Full visibility on hover */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card:hover .card-title {
+  color: var(--card-title-hover-color);
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.card:hover .card-text {
+  color: #f39c12; /* Change text color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button styles */
+.btn {
+  background-color: var(--btn-bg-color);
+  border: none;
+  color: var(--btn-text-color);
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color var(--transition-duration) var(--transition-ease),
+    transform var(--transition-duration) var(--transition-ease);
+}
+
+.btn:hover {
+  background-color: var(--btn-bg-hover-color);
+  transform: scale(1.05);
+}
+
+.btn:disabled {
+  background-color: #6c757d;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 8px 16px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination button:hover {
+  background-color: #f1f1f1;
+}

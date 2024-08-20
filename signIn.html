@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/component css/signin.css" />
+    <link rel="icon" href="Photos/favicon.png" sizes="any" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4">
+      <h1 class="display-4">Welcome Back!</h1>
+      <p class="lead">Please sign in to continue</p>
+    </header>
+
+    <!-- Main Content -->
+    <main
+      class="d-flex justify-content-center align-items-center vh-100 bg-light"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+            <div
+              class="card border-0 shadow-lg rounded-4 overflow-hidden sign-in-card"
+            >
+              <div class="card-body p-5">
+                <h2 class="card-title text-center mb-4">Sign In</h2>
+                <form id="signInForm">
+                  <div class="form-group mb-4">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control modern-input"
+                      id="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control modern-input"
+                      id="password"
+                      placeholder="Enter your password"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 py-2">
+                    Sign In
+                  </button>
+                </form>
+                <div class="text-center mt-3">
+                  <p class="mb-0">
+                    Don't have an account?
+                    <a href="signUp.html" class="text-primary">Sign Up</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0">&copy; 2024 wTw. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="js/signIn.js"></script>
+  </body>
+</html>
